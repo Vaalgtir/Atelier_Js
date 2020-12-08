@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" type="text/css" href="./style/fontawesome/css/all.css">
+
+    <title>Boutique</title>
+</head>
+
+<body>
+    <nav>
+        <i class="fas fa-shopping-basket fa-3x"></i>
+    </nav>
+
+    <main>
+        <h1>Boutique</h1>
+
+        <div id="wrapperArticle">
+            <!-- target of the script for adding content -->
+            <select id="menuCatalogue">
+                <option value="catalog1" selected>Catalogue 1</option>
+                <option value="catalog2">Catalogue 2</option>
+            </select>
+            <div class="button selectCatalogue">Changer de catalogue</div>
+            <div class="target"></div>
+        </div>
+        <div id="wrapperPanier">
+            <div class="searchbar">
+                <h1>Rechercher dans la boutique</h1>
+                <input type="text" class="inputSearch">
+            </div>
+            <!-- target of the script for adding content -->
+            <h1>Panier</h1>
+            <span class="totalPrice"></span>
+            <div class="targetPanier"></div>
+            <!-- <section class="article">
+                <h1>  catalog[i].name  </h1>
+                <span>  catalog[i].price  .00€</span>
+                <i class="fas fa-2x fa-trash-alt"></i>
+            </section>; -->
+        </div>
+        
+        <div></div>
+    </main>
+
+<!-- Mettre les src des Catalogues -->
+    <script type="text/javascript" src="./data/Catalogue1.js"></script>
+    <script type="text/javascript" src="./data/Catalogue2.js"></script>
+<!-- Mettre les src des Catalogues  *** END ***-->
+
+    <script type="text/javascript" src="./script/jquery.js"></script>
+    <script src="./script/Contrôleur.js"></script>
+</body>
+
+</html>
